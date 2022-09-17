@@ -383,9 +383,10 @@ function diaDeLaSemana(numeroDeDia) {
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario.
   //Escribe tu código aquí
   if (numeroDeDia < 2 || numeroDeDia > 6) {
-    return "Es fin de semana"
-  } if (numeroDeDia > 1 || numeroDeDia < 7) {
-    return "Es dia Laboral"
+    return "Es fin de semana";
+  }
+  if (numeroDeDia > 1 || numeroDeDia < 7) {
+    return "Es dia Laboral";
   }
 }
 
@@ -396,7 +397,8 @@ function empiezaConNueve(n) {
   let num = String(n);
   if (num[0] === "9") {
     return true;
-  } return false;
+  }
+  return false;
 }
 
 function todosIguales(arreglo) {
@@ -439,11 +441,12 @@ function mayorACien(array) {
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
   let nuevoArray = [];
-  for (let i = 0; i < array.length; i++) {    
+  for (let i = 0; i < array.length; i++) {
     if (array[i] > 100 && array[i] < 200) {
-    nuevoArray.push(array[i]);
-  }        
-  } return nuevoArray;
+      nuevoArray.push(array[i]);
+    }
+  }
+  return nuevoArray;
 }
 
 function breakStatement(numero) {
@@ -459,12 +462,12 @@ function breakStatement(numero) {
 
   do {
     numero += 2;
-    i++
-    nuevoArray.push(numero)
+    i++;
+    nuevoArray.push(numero);
     if (numero === i) {
       return "Se interrumpió la ejecución";
     }
-  } while (i < 10)
+  } while (i < 10);
   return nuevoArray;
 }
 
@@ -479,9 +482,9 @@ function continueStatement(numero) {
   let i = 0;
   while (i < 10) {
     i++;
-    if (i === 4)
-    continue
+    if (i === 4) continue;
     numero += 2;
-    nuevoArray.push(numero)
-  } return nuevoArray;
+    nuevoArray.push(numero);
+  }
+  return nuevoArray;
 }
